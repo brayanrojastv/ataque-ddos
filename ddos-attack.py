@@ -44,6 +44,6 @@ while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
      port = port + 1
-     print "Se envio %s paquetes para %s con el puerto:%s"%(sent,ip,port)
+     print ("Se envio %s paquetes para %s con el puerto:%s")%(sent,ip,port)
      if port == 65534:
        port = 1
